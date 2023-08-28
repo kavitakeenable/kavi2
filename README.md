@@ -219,9 +219,12 @@
 
 > git add .
 
-> git commit - m "just for understanding"
 
-> git push https://github.com/kavitakeenable/kavi2.git
+> git commit -m "just for understanding"
+
+
+> git push https://github.com/kavitakeenable/Rashi.git
+
 
 
 ![Alt text](POD77.png)
@@ -238,7 +241,8 @@
 ![Alt text](git%20ras.png)
 
 
-> git clone https://github.com/kavitakeenable/kavi2.git
+
+> git clone https://github.com/kavitakeenable/Rashi.git
 
 
 
