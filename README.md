@@ -166,7 +166,7 @@
 
 
 
-# 3.  started with GitHub
+# 3.  Started with GitHub
 ## Step 1.  
 
 ## Login github
@@ -217,6 +217,10 @@
 
 > - **Push** : The git push command is used to upload the committed changes from your local computer to a remote Git repository. When you make changes to your code and commit them, you need to push those changes to your remote repository so that others can see and access them.
 
+> git add .
+> git commit - m "just for understanding"
+> git push https://github.com/kavitakeenable/kavi2.git
+
 ![Alt text](POD77.png)
 
 
@@ -227,6 +231,7 @@
 
 > - **Clone**: The git clone command is used to copy the entire remote Git repository onto your local machine. It's a way to get a complete copy of all files and history from the remote repository onto your system. This is often used when you want to start working on a project that is hosted remotely.
 
+> git clone https://github.com/kavitakeenable/kavi2.git
 ![Alt text](git%20ras.png)
 
 
