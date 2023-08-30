@@ -17,7 +17,7 @@
 
 ## **Overview** 
 
- >podman is a containerization tool for Linux-based operating systems. You can follow these steps to install Podman on Ubuntu:
+> Podman is a containerization tool for Linux-based operating systems. You can follow these steps to install Podman on Ubuntu:
 
 
 
@@ -36,16 +36,15 @@
 
 - Now install the podman package
 
-
-
+ 
 > <span style="color:blue"> sudo apt install -y podman </span>
 
 ![Alt text](pod2.png)
 
 
-- By doing this flag ***"(-y)"*** you will not need to avoid any confirmation in the installation process.
+- The **(-y)** command line option lets you automatically say **"yes"** to everything the command asks for, which is useful for automating tasks without the need to provide manual confirmation.
 
-
+  
 ##  Check Podman Version 
 
 - podman is installed, you can check its version using the podman --version command:
@@ -55,24 +54,24 @@
 ![Alt text](pod3.png)
 
 
-- If Padman is successfully installed in your system, then it will show you the version number.
+- If podman is successfully installed in your system, then it will show you the version number.
 
 
 
 ## 2. Setup docsify in podman container
 
-- To set up Docsify in Podman container you need to follow below steps:
+- To set up Docsify in Podman container, you need to follow below steps:
 
 **Create a Directory for Docsify**
 
 - Create a directory where you'll keep your Docsify documentation files. For example
 
-> - You can create a new folder. then  you can use the "mkdir folder_name" command in Terminal to create a new folder.
+> - You can create a new folder. then  you can use the "mkdir folder_name" command in terminal to create a new folder.
 
 >- <span style="color:blue">mkdir uk</span>
 
 
-> - Navigate Inside the Folder
+> - Move Inside the Folder
 ><span style="color:blue">cd uk</span>
 
 ![Alt text](pod4.png)
@@ -88,7 +87,7 @@
 
 - You can use a text editor like vim to create and edit the file. Open your terminal and run:
 
-* Then after that we have to write the code of html in Index.html
+* Then after that, we have to write the HTML code in Index.html
 
  ><span style="color:blue">vim index.html</span>
 
@@ -130,9 +129,9 @@
 
 - Run the new container and enter the desired directory where you want to work with Docsify. Replace **/path/to/your/directory** with the actual path to your desired directory:
 
-> ***let me explain the options -d, -p, and -v that are used in Podman containers***
+- **Let me explain the options -d, -p, and -v that are used in Podman containers**
 
-> - **"-d"** **(Detach Mode)** : This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal. It's useful for users who don't want to see the container's output in the terminal.
+> - **"-d"** **(Detach Mode)** : This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal.
 
 > - **"-p"** **(Port Forwarding)** : This option enables port forwarding between the container and the host system. This means you can access the services running inside the container without external categorization.
 
@@ -201,7 +200,7 @@
 
 > 4. Select Add a README file.
 
-> 4. Click **"Create repository"**
+> 4. Click **"Create repository."**
 
 ![Alt text](git%20pub.png)
 
@@ -211,9 +210,9 @@
 ***use of the Git commands - commit, clone, push, and pull***
 
 
-> ***git add*** to stage changes, ***commit*** them with git commit, and push them to the remote repository with git push. Has this process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
+> ***git add*** to stage changes, ***commit*** them with git commit, and push them to the remote repository with git push. This process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
 
-> - **Commit** : The git commit command is used to permanently store the changes made to code. Whenever you make changes to your code that you want to keep, you create a "commit" that contains a brief description of the changes you made. This helps in keeping track of the project's history.
+> - **Commit**: The git commit command is used to permanently store the changes made to code. Whenever you make changes to your code that you want to keep, you create a "commit" that contains a brief description of the changes you made. This helps keep track of the project's history.
 
 > - **Push** : The git push command is used to upload the committed changes from your local computer to a remote Git repository. When you make changes to your code and commit them, you need to push those changes to your remote repository so that others can see and access them.
 
