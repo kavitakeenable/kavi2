@@ -26,8 +26,10 @@
 - First, update your system so that you have the latest package progress and dependencies:
 
 
+```
+ sudo apt update
+```
 
-><span style="color:blue"> sudo apt update</span><div> 
 
 ![Alt text](pod%201.png)
 
@@ -125,7 +127,7 @@ vim README.md
  LABEL description="A demo Dockerfile for build Docsify."
  WORKDIR /docs
  RUN npm install -g docsify-cli@latest
-  EXPOSE 3000/tcp
+ EXPOSE 3000/tcp
  ENTRYPOINT docsify serve .
 
 ```
@@ -136,6 +138,7 @@ vim README.md
 
  ```
 docker build -f Dockerfile -t docsify/demo .
+
 ``` 
 <div style='break-after:always'></div>
 
@@ -162,7 +165,7 @@ Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify
 ![Alt text](pod8.png)
 
 
-- Check if the container is created with the **“podman ps”** command.
+- Check if the container was created with the **“podman ps”** command.
 
 ```
 Podman ps
@@ -176,10 +179,6 @@ Podman ps
 - Open your web browser and enter **http://localhost:3000** in the address bar. This will allow you to view your Docsify documentation served from the container. You should see the Docsify interface displaying your documentation content.
 
 ![Alt text](pod88.png)
-
-
-- #### Docsify use the reference link for additional information
-     https://docsify.js.org/#/
 
 <div style='break-after:always'></div>
 
@@ -334,12 +333,6 @@ Store the token in a safe place, like a password manager or a secure document.
 ![Alt text](pod58.png)
 
 
-
-### GitHub: use the reference link for additional information
-
-    https://docs.github.com/en/get-started/quickstart/hello-world
-
-
 <div style='break-after:always'></div>
 
 
@@ -381,5 +374,17 @@ Strikethrough Text: ~~Strikethrough Text~~
 
 ![Alt text](md%205.png)
 
-- #### Markdown Use the reference link for additional information 
+#  Reference Link:
+
+#### Markdown Use the reference link for additional information 
      https://www.markdownguide.org/cheat-sheet/
+
+#### GitHub: use the reference link for additional information
+
+     https://docs.github.com/en/get-started/quickstart/hello-world
+
+#### Docsify use the reference link for additional information
+
+     https://docsify.js.org/#/
+
+    
