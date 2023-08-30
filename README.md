@@ -170,16 +170,18 @@
 
 
 # 3.  Started with GitHub
+
+
 ## Step 1.  
 
 ## Login github
 
 **Now go to GitHub but how to login to GitHub account is given below**
 
-* **Here's a step-by-step guide to hosting Docsify docs on GitHub**
+ **Here's a step-by-step guide to hosting Docsify docs on GitHub**
 
 
-***Login ya Sign in Github Account***
+**Sign in or log in to your Github account.**
 
 ><span style="color:blue">Log in to your GitHub account.
 </span>
@@ -189,7 +191,7 @@
 
 ## Create a New Repository
 
-***On GitHub, click the "New" button to create a new repository. Give it a name of your choice***
+**On GitHub, click the "New" button to create a new repository. Give it a name of your choice**
 
 ![Alt text](ggggt3.png)
 
@@ -211,10 +213,10 @@
 
 ## Step 3 : Stage and Commit Changes
 
-***use of the Git commands - commit, clone, push, and pull***
+**use of the Git commands - commit, clone, push, and pull**
 
 
-> ***git add*** to stage changes, ***commit*** them with git commit, and push them to the remote repository with git push. This process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
+> **git add** to stage changes, **commit** them with git commit, and push them to the remote repository with git push. This process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
 
 > - **Commit**: The git commit command is used to permanently store the changes made to code. Whenever you make changes to your code that you want to keep, you create a "commit" that contains a brief description of the changes you made. This helps keep track of the project's history.
 
@@ -228,7 +230,7 @@
 > - git add .
 
 
-> - git commit -m "just for understanding"
+>-  git commit -m "just for understanding"
 
 
 > - git push https://github.com/kavitakeenable/Rashi.git
@@ -240,7 +242,7 @@
 
 ## Step 4 : Clone the Repository
 
-***Choose the "Clone" option on GitHub to get the repository URL. Copy this URL***
+**Choose the "Clone" option on GitHub to get the repository URL. Copy this URL**
 
 
 > - **Clone**: The git clone command is used to copy the entire remote Git repository onto your local machine. It's a way to get a complete copy of all files and history from the remote repository onto your system. This is often used when you want to start working on a project that is hosted remotely.
@@ -271,8 +273,8 @@ docsify/demo
 
 ## Step 6 Access Account Settings
 
-> ***Navigate to your account settings. Look for your profile picture or username at the top-right corner and click on it to access your account settings.***
->- Within the account settings, search for a section related to "Tokens," "Security," or ***"Developer Settings."***
+> **Navigate to your account settings. Look for your profile picture or username at the top-right corner and click on it to access your account settings.**
+>- Within the account settings, search for a section related to "Tokens," "Security," or **"Developer Settings."**
 
 |   **profile account**       | **Setting**          | 
 |---|----|
@@ -309,13 +311,13 @@ Copy and Store Securely.
 Store the token in a safe place, like a password manager or a secure document.
 
 
-***Similarly you can push when you have to update any code you will push and when you have to take any code from remote server then you will pull***
+**Similarly you can push when you have to update any code you will push and when you have to take any code from remote server then you will pull**
 
 ![Alt text](pod58.png)
 
 
 
-- #### GitHub use the reference link for additional information
+### GitHub: use the reference link for additional information
     https://docs.github.com/en/get-started/quickstart/hello-world
 
 
