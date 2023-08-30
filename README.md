@@ -159,7 +159,7 @@ docker build -f Dockerfile -t docsify/demo .
 - ***First, create a Podman container for Docsify.***
 
 ```
-Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify
+podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify
 ```
 
 ![Alt text](pod8.png)
@@ -168,7 +168,7 @@ Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify
 - Check if the container was created with the **“podman ps”** command.
 
 ```
-Podman ps
+podman ps
 ```
 
 ![Alt text](pod9.png)
