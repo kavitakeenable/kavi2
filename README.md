@@ -216,13 +216,18 @@
 
 > - **Push** : The git push command is used to upload the committed changes from your local computer to a remote Git repository. When you make changes to your code and commit them, you need to push those changes to your remote repository so that others can see and access them.
 
-> git add .
 
 
-> git commit -m "just for understanding"
+<div style='break-after:always'></div>
 
 
-> git push https://github.com/kavitakeenable/Rashi.git
+> - git add .
+
+
+> - git commit -m "just for understanding"
+
+
+> - git push https://github.com/kavitakeenable/Rashi.git
 
 
 
@@ -241,7 +246,7 @@
 
 
 
-> git clone https://github.com/kavitakeenable/Rashi.git
+> - git clone https://github.com/kavitakeenable/Rashi.git
 
 
 
