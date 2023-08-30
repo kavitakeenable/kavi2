@@ -36,8 +36,9 @@
 
 - Now install the podman package
 
- 
-> <span style="color:blue"> sudo apt install -y podman </span>
+```
+  sudo apt install -y podman 
+```
 
 ![Alt text](pod2.png)
 
@@ -49,7 +50,9 @@
 
 - podman is installed, you can check its version using the podman --version command:
 
-><span style="color:blue">podman --version</span>
+```
+podman --version
+```
 
 ![Alt text](pod3.png)
 
@@ -60,7 +63,7 @@
 
 ## 2. Setup docsify in podman container
 
-- To set up Docsify in Podman container, you need to follow below steps:
+- To set up Docsify in a Podman container, you need to follow the below steps:
 
 **Create a Directory for Docsify**
 
@@ -68,19 +71,28 @@
 
 > - You can create a new folder. then  you can use the "mkdir folder_name" command in terminal to create a new folder.
 
->- <span style="color:blue">mkdir uk</span>
+```
+mkdir uk
+```
 
 
-> - Move Inside the Folder
-><span style="color:blue">cd uk</span>
+> - Move Inside the directory and create files.
+
+```
+cd uk
+```
 
 ![Alt text](pod4.png)
 
 ## Create the File and Open it for Editing:
 
-><span style="color:blue">touch index.html</span>
+```
+touch index.html
+```
 
-><span style="color:blue">touch README.md</span>
+```
+touch README.md
+```
 
 ![Alt text](pod5.png)
 
@@ -89,13 +101,18 @@
 
 * Then after that, we have to write the HTML code in Index.html
 
- ><span style="color:blue">vim index.html</span>
+ ```
+vim index.html
+```
 
 ![Alt text](pod7.png)
 
 ***Create a file named "index.html" in your preferred text editor and paste the following content***
 
- ><span style="color:blue">vim README.md</span>
+```
+vim README.md
+```
+
 
 ![Alt text](pod6.png)
  
@@ -103,28 +120,23 @@
 ***Create a file named "Readme.md" in your preferred text editor and paste the following content***
 
 ## Create Dockerfile 
+```
+ FROM node:latest
+ LABEL description="A demo Dockerfile for build Docsify."
+ WORKDIR /docs
+ RUN npm install -g docsify-cli@latest
+  EXPOSE 3000/tcp
+ ENTRYPOINT docsify serve .
 
-> FROM node:latest
-
-> LABEL description="A demo Dockerfile for build Docsify."
-
-> WORKDIR /docs
- 
-> RUN npm install -g docsify-cli@latest
- 
-> EXPOSE 3000/tcp
- 
-> ENTRYPOINT docsify serve .
-
-
+```
 <div style='break-after:always'></div>
 
 ## Build docker image
 
 
- > docker build -f Dockerfile -t docsify/demo .
-
-
+ ```
+docker build -f Dockerfile -t docsify/demo .
+``` 
 <div style='break-after:always'></div>
 
 
@@ -143,14 +155,18 @@
 
 - ***First, create a Podman container for Docsify.***
 
-><span style="color:blue">Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify/demo</span>
+```
+Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify
+```
 
 ![Alt text](pod8.png)
 
 
 - Check if the container is created with the **“podman ps”** command.
 
-><span style="color:blue">Podman ps</span>
+```
+Podman ps
+```
 
 ![Alt text](pod9.png)
 
@@ -172,7 +188,7 @@
 # 3.  Started with GitHub
 
 
-## Step 1.  
+## Step 1.
 
 ## Login github
 
@@ -183,8 +199,8 @@
 
 **Sign in or log in to your Github account.**
 
-><span style="color:blue">Log in to your GitHub account.
-</span>
+> Log in to your GitHub account.
+
 
 ![Alt text](POD%2021.png)
 
@@ -226,14 +242,15 @@
 
 <div style='break-after:always'></div>
 
-
-> - git add .
-
-
->-  git commit -m "just for understanding"
-
-
-> - git push https://github.com/kavitakeenable/Rashi.git
+```
+git add .
+```
+```
+git commit -m "just for understanding"
+```
+```
+git push https://github.com/kavitakeenable/Rashi.git
+```
 
 
 
@@ -251,8 +268,9 @@
 ![Alt text](git%20ras.png)
 
 
-
-> - git clone https://github.com/kavitakeenable/Rashi.git
+```
+ git clone https://github.com/kavitakeenable/Rashi.git
+```
 
 
 
@@ -264,9 +282,9 @@
 
 - To integrate Docsify with GitHub and ensure seamless integration, include the repository name in the URL path. 
 
-><span style="color:blue">Podman run -d -p 3000:3000  --name=docsify -v /home/poem/Rashi:/docs 
-docsify/demo
-</span>
+```
+Podman run -d -p 3000:3000  --name=docsify -v /home/poem/Rashi:/docs:docsify/demo```
+```
 
 ![Alt text](pod66.png)
 
@@ -318,6 +336,7 @@ Store the token in a safe place, like a password manager or a secure document.
 
 
 ### GitHub: use the reference link for additional information
+
     https://docs.github.com/en/get-started/quickstart/hello-world
 
 
