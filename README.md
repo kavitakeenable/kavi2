@@ -78,7 +78,7 @@ mkdir uk
 ```
 
 
-> - Move Inside the directory and create files.
+> - Move inside the directory and create files.
 
 ```
 cd uk
