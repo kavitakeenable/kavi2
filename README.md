@@ -150,7 +150,7 @@ docker build -f Dockerfile -t docsify/demo .
 
 - **Let me explain the options -d, -p, and -v that are used in Podman containers**
 
-> - **"-d"** **(Detach Mode)** : This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal.
+> - **"-d"** **(Detach Mode)** : This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal.It's useful for users who don't want to see the container's output in the terminal.
 
 > - **"-p"** **(Port Forwarding)** : This option enables port forwarding between the container and the host system. This means you can access the services running inside the container without external categorization.
 
@@ -231,7 +231,7 @@ podman ps
 **use of the Git commands - commit, clone, push, and pull**
 
 
-> **git add** to stage changes, **commit** them with git commit, and push them to the remote repository with git push. This process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
+> **git add** to stage changes, **commit** them with git commit, and push them to the remote repository with git push. This process enabled you to integrate your Docsify documentation into a GitHub repository and manage it under centralised version control
 
 > - **Commit**: The git commit command is used to permanently store the changes made to code. Whenever you make changes to your code that you want to keep, you create a "commit" that contains a brief description of the changes you made. This helps keep track of the project's history.
 
@@ -290,8 +290,8 @@ Podman run -d -p 3000:3000  --name=docsify -v /home/poem/Rashi:/docs:docsify/dem
 
 ## Step 6 Access Account Settings
 
-> **Navigate to your account settings. Look for your profile picture or username at the top-right corner and click on it to access your account settings.**
->- Within the account settings, search for a section related to "Tokens," "Security," or **"Developer Settings."**
+> **Direct to your account settings. Look for your profile picture or username at the top-right corner and click on it to access your account settings.**
+>- Within the account settings, search for a section related to "Tokens," **"Setting"** or **"Developer Settings."**
 
 |   **profile account**       | **Setting**          | 
 |---|----|
@@ -359,9 +359,14 @@ Store the token in a safe place, like a password manager or a secure document.
 >![Alt text](md1.png)
 
 **Output**
->Bold Text: **Bold Text** or __Bold Text__
-Italic Text: *Italic Text* or _Italic Text_
-Strikethrough Text: ~~Strikethrough Text~~
+
+> Bold Text: **Bold Text** or __Bold Text__
+
+
+> Italic Text: *Italic Text* or _Italic Text_
+
+
+> Strikethrough Text: ~~Strikethrough Text~~
 
 
 ## 3. Blockquota 
@@ -376,15 +381,13 @@ Strikethrough Text: ~~Strikethrough Text~~
 
 #  Reference Link:
 
-#### Markdown Use the reference link for additional information 
+#### Markdown use the reference link 
      https://www.markdownguide.org/cheat-sheet/
 
-#### GitHub: use the reference link for additional information
-
+#### GitHub use the reference link 
      https://docs.github.com/en/get-started/quickstart/hello-world
 
-#### Docsify use the reference link for additional information
-
-     https://docsify.js.org/#/
+#### Docsify use the reference link 
+      https://docsify.js.org/#/
 
     
