@@ -109,7 +109,6 @@ vim index.html
 
 ![Alt text](pod7.png)
 
-***Create a file named "index.html" in your preferred text editor and paste the following content***
 
 ```
 vim README.md
@@ -118,8 +117,6 @@ vim README.md
 
 ![Alt text](pod6.png)
  
-
-***Create a file named "Readme.md" in your preferred text editor and paste the following content***
 
 ## Create Dockerfile 
 ```
@@ -277,9 +274,9 @@ git push https://github.com/kavitakeenable/Rashi.git
 
 
 
-## Step 5 Integration docsify and gitHub
+## Step 5 Integration Docsify and GitHub
 
-- To integrate Docsify with GitHub and ensure seamless integration, include the repository name in the URL path. 
+- To integrate Docsify with GitHub, include the repository name in the URL path. 
 
 ```
 Podman run -d -p 3000:3000  --name=docsify -v /home/poem/Rashi:/docs:docsify/demo```
